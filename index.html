@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatwork AI Reply プライバシーポリシー</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic Medium", sans-serif;
+    max-width: 720px;
+    margin: 2em auto;
+    padding: 0 1.2em;
+    line-height: 1.75;
+    color: #222;
+  }
+  h1 {
+    font-size: 1.4em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.4em;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin-top: 2em;
+    color: #333;
+  }
+  p, li { font-size: 0.95em; }
+  small { color: #888; }
+  a { color: #2962ff; }
+</style>
+</head>
+<body>
+
+<h1>Chatwork AI Reply プライバシーポリシー</h1>
+<p><small>最終更新日: 2026-05-07</small></p>
+
+<p>本拡張機能「Chatwork AI Reply」(以下、本拡張) のプライバシーポリシーです。本拡張をインストール・利用された時点で、本ポリシーに同意したものとみなします。</p>
+
+<h2>1. 取得・利用するデータ</h2>
+<p>本拡張は、以下のデータを取り扱います。</p>
+<p><strong>(1) ユーザーが自身で入力する設定値</strong></p>
+<ul>
+  <li>Anthropic の Claude API キー</li>
+  <li>使用する Claude モデルの選択値</li>
+  <li>コンテキストとして参照する直近メッセージの件数</li>
+</ul>
+<p><strong>(2) 返信生成のために使用するチャットデータ</strong></p>
+<ul>
+  <li>開いている Chatwork チャットルームの直近メッセージ本文</li>
+  <li>入力欄に書かれている指示文 (スラッシュコマンドおよびユーザーが追記した指示)</li>
+</ul>
+
+<h2>2. データの保存</h2>
+<p>上記 (1) の設定値は、ブラウザの <code>chrome.storage.local</code> 機能を使い、ユーザーご自身の Chrome プロファイル内にのみローカル保存されます。本拡張の開発者を含む第三者がこれらのデータにアクセスすることはありません。</p>
+<p>上記 (2) のチャットデータは、メモリ上で組み立てられ API リクエストに使用されるのみで、ローカルへの永続保存は行いません。</p>
+
+<h2>3. データの送信先</h2>
+<p>返信文生成リクエストにあたり、上記 (1) の API キー、(2) のチャットデータおよび指示文を、Anthropic, PBC が提供する Claude API (<a href="https://api.anthropic.com">https://api.anthropic.com</a>) に送信します。これらのデータを Anthropic 以外の第三者サーバー、開発者のサーバー、解析サービスなどに送信することはありません。</p>
+<p>Anthropic 側でのデータの取扱いについては、<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic のプライバシーポリシー</a> をご確認ください。</p>
+
+<h2>4. データの第三者提供・販売</h2>
+<p>本拡張は、ユーザーデータを第三者に販売、貸与、譲渡することはありません。また、信用力判定や融資判定の目的で使用または転送することもありません。本拡張の単一目的 (Chatwork での返信文生成支援) 以外の用途でユーザーデータを使用することはありません。</p>
+
+<h2>5. 自動送信について</h2>
+<p>本拡張は、生成された返信文を入力欄に下書きとして差し込むのみで、Chatwork へのメッセージ送信を自動で行うことはありません。送信操作は常にユーザーご自身の判断によって行われます。</p>
+
+<h2>6. ユーザーによるデータ削除</h2>
+<p><code>chrome.storage.local</code> に保存された設定値は、Chrome の拡張機能管理画面から本拡張をアンインストールすることで削除されます。API キーのみを削除したい場合は、本拡張のポップアップ画面から該当フィールドを空にして保存してください。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>本ポリシーや本拡張機能に関するお問い合わせは、Chrome Web Store のサポートタブまたは公開時に記載するメールアドレスまでご連絡ください。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>本ポリシーは予告なく変更される場合があります。変更後は本ページの最終更新日が更新されます。</p>
+
+</body>
+</html>
